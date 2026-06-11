@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<a id="top"></a>
+<div style="
+background-color:#eed2cc;
+padding:10px;
+border-radius:15px;
+justify-content:center;
+display:flex;
+align-items:center;">
+
+	  <align-center>
+		<a href="index.html" style="margin-left:20px"><img src="construction.png" width="20px">Home</a>
+		 <a href="aboutme.html" style="margin-left:20px"><img src="digital-nomad.png" width="20px">About Me</a>
+      	 	 <a href="friends.html" style="margin-left:20px;"><img src="bff.png" width="20px">Friends</a>
+      	 	 <a href="hobby.html" style="margin-left:20px;"><img src="headphones.png" width="20px">Hobbies</a>
+		<a href="books&review.html" style="margin-left:20px;"><img src="open-book.png" width="20px">Book Reviews</a>
+       	 	<a href="gallery.html" style="margin-left:20px;"><img src="photo-camera.png" width="20px">Gallery </a>
+       	 	<a href="dad.html" style="margin-left:20px;"><img src="man.png" width="20px">Special Page</a>
+	</align-center>
+</div>
+
+	<title>Individual Assignment: Personal Website</title>
+	<meta charset='utf-8'/>
+</head>
+
+<body>
+
+<body style="
+background-image:url('stripe.jfif');
+background-repeat:repeat;
+background-position:100%;">
+
+<br>
+<br>
+
+<center>
+<image src="gallery/gallery.png" 
+height="280";
+width:"1230";
+style="border: 5px solid #872A1C;
+border-radius: 15px">
+</center>
+
+
+<div class="line">
+    <div class="hang polaroid" >
+        <img src="gallery/qie&fadnat.jpg">
+        <p class="caption">Me and Natasha on an outing ♡</p>
+    </div>
+
+    <div class="hang polaroid big">
+        <img src="gallery/f2.jpg">
+        <p class="caption">Me with Highschool friends ✨</p>
+    </div>
+
+    <div class="hang polaroid">
+        <img src="gallery/qiers2.jpg">
+        <p class="caption">Me with Yeraa ♡</p>
+    </div>
+</div>
+
+<div class="line">
+    <div class="hang polaroid small">
+        <img src="gallery/random.jpg">
+        <p class="caption">A pic of me in Alor Setar ✨</p>
+    </div>
+
+    <div class="hang polaroid big" >
+        <img src="gallery/mother.jpg">
+        <p class="caption">Me with my Mom ♡</p>
+    </div>
+</div>
+
+
+<div class="gallery">
+    <img src="gallery/brokiescard.jpg" class="thumb" onclick="openLightbox(this)" data-caption="Brokies with their own custom cards made by Alia ♡">
+    <img src="gallery/starkies.jpg" class="thumb" onclick="openLightbox(this)" data-caption="Brokies forming a star in shadows ✨">
+    <img src="gallery/group1.jpg" class="thumb" onclick="openLightbox(this)" data-caption="The trio of chaos📸">
+    <img src="gallery/haikyu.jpg" class="thumb" onclick="openLightbox(this)" data-caption="Me with more of our highschool friends watching Haikyu the movie ">
+    <img src="gallery/fampic2024.jpg" class="thumb" onclick="openLightbox(this)" data-caption="Family picture 2024 💖">
+    <img src="gallery/raya2025.jpg" class="thumb" onclick="openLightbox(this)" data-caption="Raya 2025 🌙">
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+    <p id="lightbox-caption"></p>
+</div>
+
+<script>
+function openLightbox(img){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = img.src;
+
+    document.getElementById("lightbox-caption").innerText =
+        img.getAttribute("data-caption");
+}
+
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+<div class="line">
+
+    <div class="hang polaroid">
+        <img src="gallery/f23.jpg">
+        <p class="caption">Highschool outing ♡</p>
+    </div>
+
+    <div class="hang polaroid small">
+        <img src="gallery/girlplaveout.jpg">
+        <p class="caption">PLAVE outing✨</p>
+    </div>
+
+    <div class="hang polaroid big">
+        <img src="dad/spm24.jpg">
+        <p class="caption">Me with my Family on SPM result day ♡</p>
+    </div>
+</div>
+
+<div class="line">
+    <div class="hang polaroid small">
+        <img src="dad/fam2.jpg">
+        <p class="caption">Dinner with Family In Kedah ✨</p>
+    </div>
+
+ <div class="hang polaroid big">
+        <img src="gallery/beach2.jpg">
+        <p class="caption">A holiday visiting the beach ♡</p>
+    </div>
+</div>
+
+<center>
+<p><a href="#top" style="
+background-color:#EAA499;
+color:white;
+padding:12px 20px;
+border-radius:15px;
+text-decoration:none;
+font-weight:bold;">
+🌸 Back to Top 🌸
+</a></p>
+</center>
+
+<hr style="border: 1px dashed #5C1D24; width: 950px; margin: 50px auto 20px auto;">
+
+<div style="text-align: center; font-family: sans-serif; font-size: 12px; color: #5C1D24; line-height: 1.8; padding-bottom: 40px;">
+    <p style="margin: 5px 0;">
+        &copy; 2026 Qie's Little Universe. All Rights Reserved.
+    </p>
+    <p style="margin: 5px 0; font-style: italic; color: #8A333C;">
+        <strong>Disclaimer:</strong> This website is created for the purpose of IML254 individual project assignment. 
+        All materials used belong to their respective owners.
+    </p>
+    <p style="margin: 5px 0; font-size: 11px; color: #AA666F;">
+        Recommended Browser: Google Chrome | Resolution: 1920x1080 | Last Updated: June 2026
+    </p>
+</div>
+
+<audio id="myAudio" src="onespark.mp3" autoplay loop></audio>
+
+<button onclick="toggleMute()" id="muteBtn"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background-color:#EAA499;
+color:white;
+border:none;
+padding:12px 15px;
+border-radius:50%;
+cursor:pointer;
+font-size:18px;
+z-index:999;">
+🔊
+</button>
+
+<script>
+function toggleMute() {
+    var audio = document.getElementById("myAudio");
+    var btn = document.getElementById("muteBtn");
+
+    audio.muted = !audio.muted;
+
+    if (audio.muted) {
+        btn.innerHTML = "🔇";
+    } else {
+        btn.innerHTML = "🔊";
+    }
+}
+</script>
+</body>
+</html>
